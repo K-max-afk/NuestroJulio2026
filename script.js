@@ -368,3 +368,174 @@ alert("❤️ Gracias por formar parte de mi vida. Te amo infinitamente ❤️")
 });
 
 }
+/*==========================================
+      ESTRELLA FUGAZ
+==========================================*/
+
+function shootingStar(){
+
+    const star=document.createElement("div");
+
+    star.className="shooting-star";
+
+    star.style.top=Math.random()*40+"vh";
+    star.style.left="-150px";
+
+    document.body.appendChild(star);
+
+    setTimeout(()=>{
+        star.remove();
+    },3000);
+
+}
+
+setInterval(()=>{
+
+    shootingStar();
+
+},18000+Math.random()*12000);/*==========================================
+      FRASES FLOTANTES
+==========================================*/
+
+const floatingMessages=[
+
+"Te amo ❤️",
+"Eres mi persona favorita",
+"Siempre tú",
+"Gracias por existir",
+"Mi lugar favorito eres tú",
+"Nuestro amor es infinito",
+"Siempre contigo ✨",
+"Mi universo eres tú"
+
+];
+
+function floatingText(){
+
+    const text=document.createElement("div");
+
+    text.className="floating-text";
+
+    text.innerHTML=floatingMessages[
+        Math.floor(Math.random()*floatingMessages.length)
+    ];
+
+    text.style.left=Math.random()*80+10+"vw";
+
+    document.body.appendChild(text);
+
+    setTimeout(()=>{
+
+        text.remove();
+
+    },9000);
+
+}
+
+setInterval(floatingText,7000);/*==========================================
+      CARTA SORPRESA
+==========================================*/
+
+const letters=[
+
+"Gracias por hacer mi vida más bonita ❤️",
+
+"Prometo seguir eligiéndote todos los días.",
+
+"Eres el mejor regalo que me dio la vida.",
+
+"Contigo todo tiene sentido.",
+
+"No importa el tiempo... siempre serás mi lugar favorito."
+
+];
+
+function randomLetter(){
+
+    const random=
+        letters[Math.floor(Math.random()*letters.length)];
+
+    alert("💌\n\n"+random);
+
+}
+
+const letterBtn=document.getElementById("letterBtn");
+
+if(letterBtn){
+
+letterBtn.addEventListener("click",randomLetter);
+
+}
+/*==========================================
+      CONTADOR
+==========================================*/
+
+const together=document.getElementById("together");
+
+if(together){
+
+const startDate=new Date("2026-01-01");
+
+function updateCounter(){
+
+const now=new Date();
+
+let diff=now-startDate;
+
+let days=Math.floor(diff/86400000);
+
+diff%=86400000;
+
+let hours=Math.floor(diff/3600000);
+
+diff%=3600000;
+
+let minutes=Math.floor(diff/60000);
+
+let seconds=Math.floor((diff%60000)/1000);
+
+together.innerHTML=
+
+`${days} días ${hours} horas ${minutes} minutos ${seconds} segundos ❤️`;
+
+}
+
+updateCounter();
+
+setInterval(updateCounter,1000);
+
+}
+Gracias por formar parte de mi vida ❤️
+/*==========================================
+        NUESTRA HISTORIA
+==========================================*/
+
+const timelineItems = document.querySelectorAll(".timeline-item");
+
+if(timelineItems.length){
+
+    const observer = new IntersectionObserver((entries)=>{
+
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },{
+
+        threshold:0.3
+
+    });
+
+    timelineItems.forEach(item=>{
+
+        observer.observe(item);
+
+    });
+
+}
