@@ -951,19 +951,21 @@ ANIMACIÓN DE APARICIÓN
 
 .page{
 
-opacity:0;
+opacity:1;
 
-transform:translateY(60px);
-
-animation:appear 1.2s forwards;
-
-animation-timeline:view();
-
-animation-range:entry 15% cover 35%;
+transform:none;
 
 }
 
 @keyframes appear{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
 
 to{
 
@@ -974,7 +976,6 @@ transform:translateY(0);
 }
 
 }
-
 /*=========================================
 GLASS BRILLO
 =========================================*/
