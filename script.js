@@ -539,3 +539,30 @@ if(timelineItems.length){
     });
 
 }
+/*==========================================
+      CARTA ROMÁNTICA
+==========================================*/
+
+const openLetter = document.getElementById("openLetter");
+const letterModal = document.getElementById("letterModal");
+const closeLetter = document.getElementById("closeLetter");
+
+if(openLetter){
+
+    openLetter.addEventListener("click",()=>{
+
+        letterModal.classList.add("active");
+
+    });
+
+}
+
+if(closeLetter){
+
+    closeLetter.addEventListener("click",()=>{
+
+        letterModal.classList.remove("active");
+
+    });
+
+}
