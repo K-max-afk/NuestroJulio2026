@@ -566,3 +566,38 @@ if(closeLetter){
     });
 
 }
+<button id="openLetter">💌 Abrir Carta</button>
+
+<div id="letterModal">
+
+<div class="letter">
+
+<h2>Para ti ❤️</h2>
+
+<p>
+
+Gracias por llegar a mi vida.
+
+Gracias por cada sonrisa,
+
+cada abrazo,
+
+cada momento.
+
+Te volvería a elegir una y mil veces.
+
+Te amo infinitamente.
+
+❤️
+
+</p>
+
+<button id="closeLetter">
+
+Cerrar
+
+</button>
+
+</div>
+
+</div>
