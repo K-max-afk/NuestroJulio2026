@@ -3,53 +3,293 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Universo ❤️</title>
 
-<title>Nuestro Universo ❤️</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<div id="stars"></div>
+    <!-- Música -->
+    <audio id="music" loop>
+        <source src="music/cancion.mp3" type="audio/mp3">
+    </audio>
 
-<div id="hearts"></div>
+    <!-- Estrellas -->
+    <div id="stars"></div>
 
-<div class="hero">
+    <!-- Corazones -->
+    <div id="hearts"></div>
 
-<div class="glass">
+    <!-- Pétalos -->
+    <div id="petals"></div>
 
-<h1>Nuestro Universo ❤️</h1>
+    <!-- =================== PORTADA ==================== -->
 
-<h2>Desde el 1 de Julio de 2026</h2>
+    <section class="hero">
 
-<p>
+        <div class="glass">
 
-Hay personas que llegan para cambiar una vida...
+            <h3>Para el hombre que cambió mi vida ❤️</h3>
 
-<br><br>
+            <h1>Nuestro Universo</h1>
 
-Tú llegaste para devolverme la mía.
+            <h2>Desde el 1 de Julio de 2026</h2>
 
-</p>
+            <p>
 
-<button id="start">
+                Hay personas que llegan para cambiar una vida.
 
-Comenzar nuestra historia ❤️
+                <br><br>
 
-</button>
+                Tú llegaste para devolverme la tranquilidad,
+                la ilusión y la sonrisa que creía haber perdido.
 
-</div>
+            </p>
 
-</div>
+            <button id="start">
 
-<script src="script.js"></script>
+                Comenzar nuestra historia
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- =================== HISTORIA ==================== -->
+
+    <main id="story">
+
+        <!-- FECHA -->
+
+        <section class="page">
+
+            <span class="emoji">📅</span>
+
+            <h2>Todo comenzó...</h2>
+
+            <h1>1 de Julio de 2026</h1>
+
+            <p>
+
+                Ese día no sabía que estaba comenzando uno
+                de los capítulos más bonitos de mi vida.
+
+            </p>
+
+        </section>
+
+        <!-- FOTO -->
+
+        <section class="page">
+
+            <h2>Nuestro primer capítulo ❤️</h2>
+
+            <img src="images/foto1.jpg" class="photo">
+
+            <p>
+
+                No imaginaba que alguien podía llegar
+                de una manera tan inesperada
+                y hacer que todo volviera a sentirse bonito.
+
+            </p>
+
+        </section>
+
+        <!-- CARTA -->
+
+        <section class="page">
+
+            <h2>Lo que nunca te dije...</h2>
+
+            <div class="letter">
+
+                <p>
+
+                    Gracias por aparecer cuando menos lo esperaba.
+
+                    <br><br>
+
+                    Gracias por enseñarme que el amor también puede sentirse tranquilo.
+
+                    <br><br>
+
+                    Gracias por cuidar un corazón que todavía estaba aprendiendo a sanar.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- COMPARACIÓN -->
+
+        <section class="page">
+
+            <h2>Historias que me recuerdan a nosotros</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <img src="images/haku.jpg">
+
+                    <h3>Haku & Chihiro</h3>
+
+                    <p>
+
+                        Porque algunas personas aparecen justo
+                        cuando más las necesitamos.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="images/foto2.jpg">
+
+                    <h3>Nosotros ❤️</h3>
+
+                    <p>
+
+                        Nuestra historia es única,
+                        pero me recuerda que el amor también puede ser un lugar seguro.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RAZONES -->
+
+        <section class="page">
+
+            <h2>50 razones por las que te amo</h2>
+
+            <button id="reasonBtn">
+
+                Descúbrelas ❤️
+
+            </button>
+
+            <div id="reasonBox">
+
+                Porque contigo puedo ser completamente yo.
+
+            </div>
+
+        </section>
+
+        <!-- GALERÍA -->
+
+        <section class="page">
+
+            <h2>Nuestros recuerdos</h2>
+
+            <div class="gallery">
+
+                <img src="images/foto1.jpg">
+
+                <img src="images/foto2.jpg">
+
+                <img src="images/foto3.jpg">
+
+                <img src="images/foto4.jpg">
+
+            </div>
+
+        </section>
+
+        <!-- PROMESAS -->
+
+        <section class="page">
+
+            <h2>Promesas</h2>
+
+            <div class="promise">
+
+                ⭐ Elegirte todos los días.
+
+            </div>
+
+            <div class="promise">
+
+                ⭐ Seguir aprendiendo contigo.
+
+            </div>
+
+            <div class="promise">
+
+                ⭐ Nunca dejar de admirarte.
+
+            </div>
+
+            <div class="promise">
+
+                ⭐ Construir miles de recuerdos.
+
+            </div>
+
+        </section>
+
+        <!-- CARTA FINAL -->
+
+        <section class="page final">
+
+            <h1>Gracias ❤️</h1>
+
+            <p>
+
+                Llegaste cuando mi corazón todavía tenía miedo.
+
+                No viniste a borrar mi pasado.
+
+                Viniste a demostrarme que el presente podía ser bonito.
+
+                <br><br>
+
+                Gracias por cuidarme.
+
+                Gracias por elegirme.
+
+                Gracias por regalarme paz.
+
+                <br><br>
+
+                Te amo infinitamente.
+
+            </p>
+
+            <button id="love">
+
+                ❤️ Siempre Tú ❤️
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 
